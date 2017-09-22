@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="incubusStyles.css">
+    <title>Incubus Shrine</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="header-heading">Shrine to Incubus (the band)</h1>
+      </div>
+
+      <div class="nav-bar">
+        <ul class="nav">
+          <li>
+            <a href="/incubus">Home</a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Incubus_(band)">Incubus Wiki</a>
+          </li>
+      </div>
+      <div class="content">
+	<div class="buttons">
+            <button onclick="hideText()">Toggle Text</button>
+	    <button onclick="hideImages()">Toggle Image</button>
+	</div>
+	<hr/>
+        <div class="main" id="main">
+          <h2 id="awesomeText" onmousedown="incubusIsAwesome()"><b>Incubus is awesome</b></h2>
+          <hr/>
+          <h3><i>Why do you like Incubus?</i></h3>
+	  <p>
+	  To be honest, I didn't like Incubus at first.  The first song I heard from them was a song called "echo".  I was a freshman in high school
+          and told the guy who was listening to it that it sounded like crap.  After hearing other songs on the radio, such as one of
+          their more popular songs "drive", I started to like them.  Ironically, I now count "echo" among my favorites by them.
+          </p>
+	  <p>
+	  I consider Incubus to be one of the most musically talented bands out there.  I have listened to all of their
+	  albums, and the first thing that struck me was how diverse their music is.  Surprisingly, they can pull this diversity off.
+	  They have some very slow songs, such as echo or aqueous transmission, which could be considered soothing or calming.  On the
+	  other hand, they have some 'hard' songs, which, depending on your mood, are very good as well.  I will say that every album
+	  shows a different side of their musical talent.  Every album has an entirely different feel than any other one, but yet still
+	  has that unique incubus tone.
+          <h3><i>Do you still listen to incubus?</i></h3>
+	  <p>
+	  I do not listen to incubus that much anymore, sadly.  I have my periods of binge listening to them, though.  After making
+	  this webpage, I can feel another binge listening period creeping on, though :P.
+	  </p>
+	  <h3><i>What is your favorite incubus album?</i></h3>
+	  <p>
+	  It is pretty hard to answer this question.  I would have to say my favorite is morning view.  It was also my first album that
+	  I ever purchased by them.  If you haven't listened through this album at least once, you haven't lived life, or something.
+	  </p>
+        </div>
+	<div class="img" id="images">
+	<hr/>
+	<img style="max-width: 100%" src="https://i0.wp.com/fanworld.co/wp-content/uploads/2015/12/Incubus.jpeg?w=2000">
+	</div>
+      </div>
+    </div>
+
+    <script>
+      function incubusIsAwesome(){
+	var text = document.getElementById('awesomeText');
+        if (text.textContent == 'Incubus is awesome' || text.textContent == 'Incubus is AWESOME! =)') text.textContent = 'Incubus is TERRIBLE =(';
+	else text.textContent = 'Incubus is AWESOME! =)';
+      }
+
+      function hideText() {
+        var x = document.getElementById('main');
+        if (x.style.display === 'none') {
+          x.style.display = 'block';
+        } else {
+          x.style.display = 'none';
+        }
+      }
+
+      function hideImages() {
+        var x = document.getElementById('images');
+        if (x.style.display === 'none') {
+          x.style.display = 'block';
+        } else {
+          x.style.display = 'none';
+        }
+
+      }
+</script>
+  </body>
+
+</html
